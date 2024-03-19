@@ -27,12 +27,12 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
+import androidx.navigation.NavHostController
 
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
-fun Registration(navController: NavController) {
+fun Registration(navController: NavHostController) {
         Surface(color = Color.White) {
             Column(
                 modifier = Modifier
@@ -120,7 +120,7 @@ fun Registration(navController: NavController) {
                         .fillMaxWidth()
                         .padding(vertical = 8.dp)
                 ) {
-                    Text("Log In")
+                    Text("REGISTER")
                 }
             }
         }

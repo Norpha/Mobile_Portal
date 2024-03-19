@@ -29,11 +29,10 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 
 @Composable
-fun LoginScreen(navController: NavController) {
+fun LoginScreen(navController: NavHostController) {
     Surface(color = Color.LightGray) {
         Column(
             modifier = Modifier
@@ -86,7 +85,7 @@ fun LoginScreen(navController: NavController) {
 
                     navController.navigate("Registration")
                 }) {
-                Text("REGISTER")
+                Text("LOGIN")
             }
         }
     }

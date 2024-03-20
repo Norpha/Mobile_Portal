@@ -120,7 +120,7 @@ fun Registration(navController: NavHostController) {
                         .fillMaxWidth()
                         .padding(vertical = 8.dp)
                 ) {
-                    Text("REGISTER")
+                    Text("UPDATE FIELD")
                 }
             }
         }

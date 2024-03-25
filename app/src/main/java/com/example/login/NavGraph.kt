@@ -5,6 +5,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.login.HomeScreen.HomeScreen
+import com.example.login.Login.LoginScreen
 import com.example.login.registration.Registration
 
 @Composable
@@ -16,8 +18,8 @@ fun Nav(navController: NavHostController) {
         composable("LoginScreen"){
             LoginScreen(navController)
         }
-        composable("Registration"){
-            Registration(navController)
+        composable("HomeScreen"){
+            HomeScreen(navController)
         }
 
 
